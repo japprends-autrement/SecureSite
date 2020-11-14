@@ -3,6 +3,7 @@ include 'ipdb.php';  // The ip database is in an other php file
 $allow=0;
 $ip=$_SERVER["REMOTE_ADDR"];
 $country = geoip_country_code_by_name($ip);
+$hostname = gethostbyaddr($ip);
 
 foreach ($countrycode as $value) {
     if ($country==$value) {$allow=1;}
@@ -32,7 +33,7 @@ if ($mysqli->connect_error) {
     die('Erreur de connexion ('.$mysqli->connect_errno.')'. $mysqli->connect_error);
 }
 
-$requete = "INSERT INTO Log_ip (ip,country, auth) VALUES ('$ip', '$country', '$allow')"; // You can create a table like that in your database or modify the sql request
+$requete = "INSERT INTO Log_ip (ip,country,host, auth) VALUES ('$ip', '$country', '$hostname','$allow')"; // You can create a table like that in your database or modify the sql request
 
 $resultat = $mysqli->query($requete) or die ('Erreur '.$requete.' '.$mysqli->error());
 
