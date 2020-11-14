@@ -1,6 +1,4 @@
 <?php
-$countrycode = array('BE','FR','BJ','BF','CD','CI','GA','GG','GF','GN','ML','NE','MC','SN','TG','LI','LU','BI','CM','CF','HT','KM','DJ', 'GQ','MG','RW','SC','TD','VU','MR','JE','NL','CA','CH','MA');
-
 $notallowedbotip=array(
 '185.191.171.12'
 );
@@ -47,6 +45,12 @@ $allowedbotip=array(
 '13.78.225.140', //microsoft
 '18.222.46.113', //amazon
 '34.204.192.214',  //amazon
-'13.66.139.107'  //microsoft
+'13.66.139.107',  //microsoft
+'31.13.115.20',  //facebook
+'54.210.113.231',  //amazon
+'13.66.139.3',   //microsoft
+'173.252.127.19', //facebook
+'173.252.127.15', //facebook
+'13.65.185.86'  //microsoft
 );
 ?>
