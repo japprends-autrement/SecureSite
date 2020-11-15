@@ -51,6 +51,13 @@ $allowedbotip=array(
 '13.66.139.3',   //microsoft
 '173.252.127.19', //facebook
 '173.252.127.15', //facebook
-'13.65.185.86'  //microsoft
+'13.65.185.86',  //microsoft
+'20.51.239.12',   //microsoft sans host PWA builder ?
+'40.78.13.132',    //microsoft sans host PWA builder ?
+'40.78.13.183',   //microsoft sans host PWA builder ?
+'40.78.13.27',    //microsoft sans host PWA builder ?
+'168.61.184.160',  //microsoft sans host PWA builder ?
+'40.78.13.111'  //microsoft sans host PWA builder ?
+
 );
 ?>
